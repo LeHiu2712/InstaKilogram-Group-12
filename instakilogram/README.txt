@@ -40,15 +40,21 @@ IT experience: beginner at Python and Java, learned some basic MySQL language fr
 
 Instruction:
 
-First, we run the server emulator with Xampp. After opening all of the required modules and moving all of the website's files to the htdocs folder, we open a web browser and type localhost/instakilogram/index.php into the address bar.
+First, we use Xampp to execute the server emulator. We open a web browser and type localhost/instakilogram/index.php into the URL bar after loading all of the essential modules and copying all of the website's contents to the htdocs folder.
 
-If you are a new user and have not agreed to the website's terms about cookies, you will see a gdpr cookie notice (it will disappear if you have approved and will reappear only if you use the website on a new device or web browser).
+If you are a new user and have not accepted to the website's cookie rules, you will be presented with a GDPR cookie notice (it will disappear if you have approved and will reappear only if you use the website on a new device or web browser).
 
-If you are not logged in, you can only see posts shared with the public. If you want to see posts for users (internal) and use the posting feature, you must have an account. Click the Login button in the upper left corner of the screen if you already have an account. If you have an account, enter your email address and password. If you don't have an account, click the button below that says "Create a new account." Fill in your email, password, and full name on the registration form. Then, upload a picture of your "avatar." If you meet all the requirements, click the "Register" button to send the information. If you want to start over, press "Reset." The password that was entered will be encoded and sent to the account. db.
+You can only see posts that have been shared with the public if you are not logged in. You must have an account to view postings for users (internal) and utilize the posting feature. If you already have an account, click the Login button in the upper left corner of the screen. Enter your email address and password if you have an account. If you don't already have an account, use the "Create a new account" button below. On the signup form, provide your email address, password, and complete name. Then, post a picture of yourself as your "avatar." If you meet all of the criteria, click the "Register" button to send the data. If you want to restart, select "Reset." The entered password will be encoded and delivered to the account. db.
 
-After logging in, a user can post an image by clicking the "Choose File" button, selecting the image, typing a caption above the image, choosing whether the image should be internal, public, or private, and then clicking the "Post" button. Click on My Account in the top left corner of the screen to go to the user dashboard. Here, you can see the user's full name and email address. Click on the avatar if you want to change it. The button to log out is right below.
+A user can publish an image after checking in by clicking the "Choose File" button, selecting the image, typing a caption above the image, selecting whether the image should be internal, public, or private, and then hitting the "Post" button. Posts are arranged by the time the image was posted. To access the user dashboard, click My Account in the top left corner of the screen. The user's full name and email address are displayed here. If you wish to modify your avatar, click on it. The logout button is directly underneath. 
 
-There are three elements in the footer: about, privacy, and help. Click to learn more about the group and what the website's rules are.
+The footer contains three sections: about, privacy, and assistance. Click here to discover more about the group and the website's regulations.
+
+To access the admin dashboard, we still use the old login page. 
+
+The administrator has his or her own email account and password: admin@gmail.com admin123@
+
+After successfully logging in, clicking "my account" will take us to the admin dashboard. We can view a list of all the people who are already on the system and what information they have here. If we wish to delete their account, we click on it and then select "Delete Account." Admin has access to all posts, even private ones.
 
 We still use the old login page to get to the admin dashboard. The admin has a separate email address and password:
 
@@ -71,13 +77,13 @@ Role: Normal User
 
 Contribution:
 
-Le Trung Hieu:
-Hoang Vu Anh Quan:
-Nguyen Viet Lam Tung:
-Tran Chi Toan:
-
+Le Trung Hieu: 20%
+Hoang Vu Anh Quan: 30%
+Nguyen Viet Lam Tung:30%
+Tran Chi Toan: 20%
+ 
 
 GitHub Repository: https://github.com/LeHiu2712/InstaKilogram-Group-12/tree/main/instakilogram
 
 
-Demostration Video:
+Demostration Video: https://rmiteduau-my.sharepoint.com/:v:/g/personal/s3818683_student_rmit_edu_au/ER1Kor8mhYFJu7KUNn1KuR0B3FthmSY5OxDfMklHw-lFMA?e=uqcHQK
