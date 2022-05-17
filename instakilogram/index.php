@@ -30,7 +30,8 @@ if (isset($_POST['content']) && isset($_FILES['img'])){
           'content' => $_POST['content'],
           'img' => $target,
           'modifier' => $_POST['modifier'],
-          'user' => $_SESSION['current_account']
+          'user' => $_SESSION['current_account'],
+          'time' => date('Y-m-d H:i:s'),
         ];
         $fp = fopen('post.db', 'a');
         fputcsv($fp, $post); 
@@ -62,52 +63,72 @@ if (isset($_POST['content']) && isset($_FILES['img'])){
   echo "Please <a href='./login.php'>LOGIN</a>";
 }
 
-//list post
+// list post
 $fp = fopen('post.db', 'r');
 echo '<div class="body">';
+$files = array();
+$dates = array();
 while (($line = fgets($fp)) !== false) {
+    array_push($files, $line);
     $temp = explode(",", $line);
+    array_push($dates, $temp[4]);
+}
+rsort($dates);
+for ($i = 0; $i < count($dates); $i++){
+  foreach ($files as $file) {
+    $info_temp = explode(",", $file);
+    if($info_temp[4] == $dates[$i]){
+        $dates[$i] = $dates[$i].",".$file;
+    }
+  }
+}
+foreach ($dates as $file){
+  $temp = explode(",", $file);
     if (isset($_SESSION['loggedin'])){
       if ("admin@gmail.com"==$_SESSION['current_account']){
         echo '
           <div class="item">
-            <img src="'.$temp[1].'" alt="" />
-            <h2>'.$temp[0].'</h2>
-            <p>'.$temp[2].'</p>
+            <img src="'.$temp[2].'" alt="" />
+            <h2>'.$temp[1].'</h2>
             <p>'.$temp[3].'</p>
+            <p>'.$temp[4].'</p>
+            <p>'.$temp[0].'</p>
           </div>
         ';
       }else {
-        if ($temp[2]!='private'){
+        if ($temp[3]!='private'){
           echo '
             <div class="item">
-              <img src="'.$temp[1].'" alt="" />
-              <h2>'.$temp[0].'</h2>
-              <p>'.$temp[2].'</p>
-              <p>'.$temp[3].'</p>
+            <img src="'.$temp[2].'" alt="" />
+            <h2>'.$temp[1].'</h2>
+            <p>'.$temp[3].'</p>
+            <p>'.$temp[4].'</p>
+            <p>'.$temp[0].'</p>
             </div>
           ';
         } 
         else
-        if (trim($temp[3])==trim($_SESSION['current_account'])){
+        if (trim($temp[4])==trim($_SESSION['current_account'])){
           echo '
           <div class="item">
-            <img src="'.$temp[1].'" alt="" />
-            <h2>'.$temp[0].'</h2>
-            <p>'.$temp[2].'</p>
+            <img src="'.$temp[2].'" alt="" />
+            <h2>'.$temp[1].'</h2>
             <p>'.$temp[3].'</p>
+            <p>'.$temp[4].'</p>
+            <p>'.$temp[0].'</p>
           </div>
           ';
         }
       }
     }else {
-      if ($temp[2]=='public'){
+      if ($temp[3]=='public'){
         echo '
           <div class="item">
-            <img src="'.$temp[1].'" alt="" />
-            <h2>'.$temp[0].'</h2>
-            <p>'.$temp[2].'</p>
+            <img src="'.$temp[2].'" alt="" />
+            <h2>'.$temp[1].'</h2>
             <p>'.$temp[3].'</p>
+            <p>'.$temp[4].'</p>
+            <p>'.$temp[0].'</p>
           </div>
         ';
       }
