@@ -1,0 +1,13 @@
+.popup{
+    width: 200px;
+    border: solid 2px #333;
+    box-shadow: 5px 10px #888888;
+    padding: 20px;
+    box-sizing: content-box;
+    border-radius: 4px;
+}
+#btnUnderstand{
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 8px;
+}  

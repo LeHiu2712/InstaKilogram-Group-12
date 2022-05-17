@@ -1,0 +1,36 @@
+form{
+display: flex;
+flex-direction: column;
+width: 600px;
+margin: 0 auto;
+}
+label{
+font-size: xx-large;
+font-weight: 900;
+margin-top: 50px;
+}
+input{
+width: 500px;
+height: 50px;
+border-radius: 16px;
+font-size: x-large;
+padding-left: 10px;
+font-weight: 900;
+color: black;
+margin-top: 5px;
+}
+.button {
+font-weight: 900;
+padding: 5px;
+box-sizing: border-box;
+width: 200px;
+height: 50px;
+border-radius: 16px;
+margin-top: 24px;
+cursor: pointer;
+margin: 20px;
+}
+.btnRegister{
+width: 400px;
+display: flex;
+}

@@ -167,46 +167,10 @@ function uploadFile($F){
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="detail_account.css">
 </head>
 
-<style>
-  form{
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    margin: 0 auto;
-  }
-  label{
-    font-size: xx-large;
-    font-weight: 900;
-    margin-top: 50px;
-  }
-  input{
-    width: 500px;
-    height: 50px;
-    border-radius: 16px;
-    font-size: x-large;
-    padding-left: 10px;
-    font-weight: 900;
-    color: black;
-    margin-top: 5px;
-  }
-  .button {
-    font-weight: 900;
-    padding: 5px;
-    box-sizing: border-box;
-    width: 200px;
-    height: 50px;
-    border-radius: 16px;
-    margin-top: 24px;
-    cursor: pointer;
-    margin: 20px;
-  }
-  .btnRegister{
-    width: 400px;
-    display: flex;
-  }
-</style>
+
 <body>
   <form action="detail_account.php" method="POST" enctype="multipart/form-data">
     <label for="username">email: </label>
