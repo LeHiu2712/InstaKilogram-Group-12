@@ -77,13 +77,13 @@ Role: Normal User
 
 Contribution:
 
-Le Trung Hieu:
-Hoang Vu Anh Quan:
-Nguyen Viet Lam Tung:
-Tran Chi Toan:
-
+Le Trung Hieu: 20%
+Hoang Vu Anh Quan: 30%
+Nguyen Viet Lam Tung:30%
+Tran Chi Toan: 20%
+ 
 
 GitHub Repository: https://github.com/LeHiu2712/InstaKilogram-Group-12/tree/main/instakilogram
 
 
-Demostration Video:
+Demostration Video: https://rmiteduau-my.sharepoint.com/:v:/g/personal/s3818683_student_rmit_edu_au/ER1Kor8mhYFJu7KUNn1KuR0B3FthmSY5OxDfMklHw-lFMA?e=uqcHQK
