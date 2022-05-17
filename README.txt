@@ -59,9 +59,7 @@ After successfully logging in, clicking "my account" will take us to the admin d
 We still use the old login page to get to the admin dashboard. The admin has a separate email address and password:
 
 admin@gmail.com 
-admin123@
-
-After logging in successfully, click on "my account" will take us to the admin dashboard. Here, we can see a list of all the users already on the system and see what information they have. If we want to delete their account, we click on their account and click "Delete Account." Admin can see all of the posts, even the private ones.
+admin123@  
 
 
 Testing Account:
@@ -86,4 +84,4 @@ Tran Chi Toan: 20%
 GitHub Repository: https://github.com/LeHiu2712/InstaKilogram-Group-12/tree/main/instakilogram
 
 
-Demostration Video: https://rmiteduau-my.sharepoint.com/:v:/g/personal/s3818683_student_rmit_edu_au/ER1Kor8mhYFJu7KUNn1KuR0B3FthmSY5OxDfMklHw-lFMA?e=uqcHQK
+Demostration Video: https://rmiteduau-my.sharepoint.com/:v:/g/personal/s3818683_student_rmit_edu_au/ER1Kor8mhYFJu7KUNn1KuR0B3FthmSY5OxDfMklHw-lFMA?e=bP8JDN
