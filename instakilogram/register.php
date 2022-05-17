@@ -173,7 +173,7 @@ function uploadFile($F){
     <input type="password" name="password" id="password" required placeholder="password...">
 
     <label for="password2">Password: </label>
-    <input type="text" name="password2" id="password2" required placeholder="Confirm password...">
+    <input type="password" name="password2" id="password2" required placeholder="Confirm password...">
     
     <label for="fullname">Fullname: </label>
     <input type="text" name="fullname" id="fullname" required placeholder="Fullname...">

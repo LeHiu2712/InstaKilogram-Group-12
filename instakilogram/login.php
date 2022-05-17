@@ -103,7 +103,7 @@ if (!empty($_POST)) {
     <input type="text" name="username" id="username" placeholder="Email...">
     
     <label for="password">Password: </label>
-    <input type="text" name="password" id="password" placeholder="password...">
+    <input type="password" name="password" id="password" placeholder="password...">
     
     <button type="submit">Login</button>
     <button>
