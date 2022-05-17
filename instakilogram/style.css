@@ -1,0 +1,19 @@
+.icon {
+    max-width: 200px;
+    height: auto;
+}
+
+.bg-1 {
+    background-color: rgb(18,146,131);
+    color: #ffffff;
+}
+
+.profile {
+    width: 350px; 
+    height: 350px;
+}
+
+.pictures {
+    width: 450px;
+    height: 450px;
+}

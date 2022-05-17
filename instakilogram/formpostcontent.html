@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+  }
+  label{
+    font-size: xx-large;
+    font-weight: 900;
+    margin-top: 50px;
+  }
+  input{
+    width: 500px;
+    height: 50px;
+    border-radius: 16px;
+    font-size: x-large;
+    padding-left: 10px;
+    font-weight: 900;
+    color: black;
+    margin-top: 5px;
+  }
+  button {
+    width: 200px;
+    height: 50px;
+    border-radius: 16px;
+    margin-top: 24px;
+    cursor: pointer;
+  }
+  select{
+    padding: 10px;
+    border-radius: 16px;
+  }
+
+  @media (max-width: 767px) {
+    form{
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      margin: 0 auto;
+    }
+    label{
+      font-size: large;
+      font-weight: 900;
+      margin-top: 20px;
+    }
+    input{
+      width: 300px;
+      height: 50px;
+      border-radius: 16px;
+      font-size: small;
+      padding-left: 10px;
+      font-weight: 900;
+      color: black;
+      margin-top: 5px;
+    }
+    select{
+      width: 300px;
+    }
+    button {
+      width: 130px;
+      height: 50px;
+      border-radius: 16px;
+      margin-top: 24px;
+      cursor: pointer;
+    }
+  }
+
+
+</style>
+<body>
+  <form action="index.php" method="POST" enctype="multipart/form-data">
+    <label for="name">Content</label>
+    <input type="text" name="content" id="content" placeholder="Type content....">
+    
+    <label for="img">Select image</label>
+    <input type="file" name="img" id="img" value="Select image">
+    <label for="modifier">Modifier</label>
+    <select name="modifier">
+      <option id="" value="public">public</option>
+      <option id="" value="internal">internal</option>
+      <option id="" value="private">private</option>
+    </select>
+    <button type="submit">POST</button>
+  </form>
+</body>
+</html>
